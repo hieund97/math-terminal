@@ -8,6 +8,7 @@ async function bootstrap() {
   app.enableCors({
     origin: [
       'http://localhost:3000',
+      'https://math-terminal.vercel.app/',
       process.env.FRONTEND_URL ?? '',
     ].filter(Boolean),
   });
