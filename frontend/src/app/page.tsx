@@ -18,14 +18,14 @@ export default function Home() {
   return (
     <>
       <DashboardShell rightPanel={<Leaderboard />}>
-        <div className="max-w-3xl mx-auto space-y-6">
+        <div className="max-w-3xl mx-auto space-y-4 sm:space-y-6">
           <QuestionCard />
 
           {hasQuestions && (
             <>
               <AnswerButtons />
 
-              <div className="flex items-start justify-between gap-4 flex-wrap">
+              <div className="flex flex-col sm:flex-row sm:items-start sm:justify-between gap-3 sm:gap-4">
                 <HintPanel />
                 {isAnswered && <SolutionPanel />}
               </div>

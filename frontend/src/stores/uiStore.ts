@@ -21,7 +21,7 @@ export const useUIStore = create<UIState>()(
   persist(
     (set) => ({
       soundEnabled: false,
-      sidebarOpen: true,
+      sidebarOpen: false,
       showXPPopup: false,
       xpPopupAmount: 0,
       leveledUp: false,
